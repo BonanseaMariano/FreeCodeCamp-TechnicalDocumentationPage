@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap">
 </head>
 
 <body>
@@ -40,6 +41,7 @@
             <li>
                 <a class="nav-link" href="#Method_declarations">Method declarations</a>
             </li>
+            <li><a class="nav-link" href="#Modern_Java_Features">Modern Java Features</a></li>
             <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
     </nav>
@@ -47,6 +49,18 @@
         <section class="main-section" id="Introduction">
             <header>Introduction</header>
             <article>
+                <p>
+                    Java is one of the most popular programming languages in 2023, especially used in:
+                </p>
+                <ul>
+                    <li>Enterprise Application Development</li>
+                    <li>Android Applications</li>
+                    <li>Big Data Processing</li>
+                    <li>Embedded Systems Development</li>
+                </ul>
+                <div class="info-box">
+                    <p>☆ Java remains one of the most in-demand languages according to the TIOBE index 2023</p>
+                </div>
                 <p>
                     Java is a class-based, object-oriented programming language that is designed to have as few
                     implementation
@@ -431,6 +445,26 @@
                     changes the value of the parameter, this change is not reflected
                     globally or in the calling method.
                 </p>
+            </article>
+        </section>
+        <section class="main-section" id="Modern_Java_Features">
+            <header>Modern Java Features</header>
+            <article>
+                <p>The latest versions of Java include modern features such as:</p>
+                <ul>
+                    <li>Records (Java 16+)</li>
+                    <li>Pattern Matching (Java 17+)</li>
+                    <li>Sealed Classes (Java 17+)</li>
+                    <li>Text Blocks (Java 15+)</li>
+                </ul>
+                <code>
+record Point(int x, int y) {}  // Modern Java Record example
+
+var message = """
+    This is a
+    text block
+    example""";    // Modern text block
+                </code>
             </article>
         </section>
         <section class="main-section" id="Reference">

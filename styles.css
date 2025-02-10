@@ -54,11 +54,28 @@ header {
   color: #e0e0e0;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+#navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00ff9d;
+  transition: width 0.3s ease;
 }
 
 #navbar a:hover {
   background-color: #333333;
   color: #ffffff;
+}
+
+#navbar a:hover::after {
+  width: 100%;
 }
 
 #main-doc {
@@ -86,16 +103,50 @@ code {
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: #2d2d2d;
+  background-color: #1e1e1e;
   color: #00ff9d;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+  border-left: 4px solid #00ff9d;
+  font-family: 'Fira Code', monospace;
+  transition: all 0.3s ease;
+}
+
+code:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
 }
 
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.main-section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.main-section:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+  transform: translateX(10px);
+}
+
+.main-section header {
+  font-size: 1.8em;
+  color: #00ff9d;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main-section header::before {
+  content: '§';
+  color: rgba(0, 255, 157, 0.3);
+  position: absolute;
+  left: -25px;
+  top: 0;
 }
 
 @media only screen and (max-width: 815px) {
